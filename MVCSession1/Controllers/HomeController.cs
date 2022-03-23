@@ -25,8 +25,14 @@ namespace MVCSession1.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            List<string> lst = new List<string>();
+            lst.Add("kiran");
+            lst.Add("sanjay");
+            lst.Add("manoj");
+            lst.Add("vijay");
+            lst.Add("peter");
 
+            ViewData["emplist"] = lst;
             return View();
         }
 
