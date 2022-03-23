@@ -1,0 +1,40 @@
+﻿@model MVCSession1.Models.ViewModels.VMCustomerDetails
+
+@{
+    ViewBag.Title = "Contact";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<div class="row">
+    <div class="col-md-12">
+        <table>
+            <tr>
+                <td>Customer Id:</td>
+                <td>@Model.Customer.CustomerId</td>
+            </tr>
+            <tr>
+                <td>Customer Name:</td>
+                <td>@Model.Customer.CustomerName</td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td>@Model.Customer.Address</td>
+            </tr>
+            <tr>
+                <td>Post Code:</td>
+                <td>@Model.Customer.PostCode</td>
+            </tr>
+
+            <tr>
+                <td>State Id:</td>
+                <td>@Model.State.StateId</td>
+            </tr>
+
+            <tr>
+                <td>State:</td>
+                <td>@Model.State.StateName</td>
+            </tr>
+        </table>
+    </div>
+</div>
